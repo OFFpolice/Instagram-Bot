@@ -29,7 +29,7 @@
 - Незаконная загрузка контента с нарушением авторских прав запрещена.
 
 ## Как связаться со мной:
-- [![Telegram Direct Badge](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram&logoColor=white)](https://t.me/OFFpolice)
+- [![Telegram Badge](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram&logoColor=white)](https://t.me/OFFpolice)
 - [![Twitter Badge](https://img.shields.io/twitter/follow/:OFFpolice2077)](https://x.com/OFFpolice2077)
 
 ## Лицензия:
