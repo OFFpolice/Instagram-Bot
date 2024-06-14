@@ -1,7 +1,8 @@
 # Instagram Bot [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://t.me/OFFpoliceChannel)
 
 ## Обзор:
-Этот Python-скрипт реализует телеграм-бота с использованием фреймворка [aiogram 2.25.1](https://docs.aiogram.dev/en/v2.25.1/) и библиотеки [instaloader](https://pypi.org/project/yt-dlp/) для загрузки видео и фотографий. Бот предоставляет пользовательский интерфейс для взаимодействия со ссылками на видео и фотографии из Instagram в Telegram.
+- Этот Python-скрипт реализует телеграм-бота с использованием фреймворка [aiogram 2.25.1](https://docs.aiogram.dev/en/v2.25.1/) и библиотеки [instaloader](https://pypi.org/project/yt-dlp/) для загрузки видео и фотографий.
+- Бот предоставляет пользовательский интерфейс для взаимодействия со ссылками на видео и фотографии из Instagram в Telegram.
 
 ## Инструкция по использованию бота:
 1. Запустите бот, используя команду `/start`.
