@@ -31,7 +31,6 @@
 ## Как связаться со мной:
 - [**Telegram**](https://t.me/OFFpolice)
 - [**X (Twitter)**](https://twitter.com/OFFpolice2077)
-- [**Email**](offpolicedev@gmail.com)
 
 ## Лицензия:
 Этот проект лицензируется по лицензии GNU - более подробную информацию смотрите в файле [LICENSE](LICENSE).
