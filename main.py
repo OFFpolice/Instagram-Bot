@@ -8,7 +8,13 @@ from os.path import join, dirname
 
 from dispatcher import dp, L
 from aiogram import executor
-from handlers import register_handlers
+
+from handlers.start import start_command
+from handlers.help import process_help_callback
+from handlers.github import process_github_callback
+from handlers.download import download_media
+from handlers.back import process_back_callback
+from handlers.subscription import check_subscription
 
 
 dotenv_path = join(dirname(__file__), ".env")
@@ -26,7 +32,14 @@ except instaloader.exceptions.ConnectionException as e:
     logging.error(f"🔴 Не удалось войти в Инстаграм: {e} %s")
 
 
-register_handlers(dp)
+async def register_handlers(dp):
+    dp.register_message_handler(start_command, commands=["start"])
+    dp.register_callback_query_handler(process_help_callback, lambda c: c.data == "help")
+    dp.register_callback_query_handler(process_github_callback, lambda c: c.data == "github")
+    dp.register_callback_query_handler(process_back_callback, lambda c: c.data == "back")
+    dp.register_callback_query_handler(check_subscription, lambda query: query.data == "check_subscription")
+    dp.register_message_handler(download_media, content_types=["text"])
+    await register_handlers(dp)
 
 
 if __name__ == "__main__":
