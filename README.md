@@ -1,4 +1,4 @@
-# Instagram Bot [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://t.me/OFFpoliceChannel) [![aiogram 2](https://img.shields.io/badge/aiogram-2-%234FC3F7)](https://docs.aiogram.dev/en/v2.25.2/)
+# Instagram Bot [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://t.me/OFFpoliceChannel) [![aiogram 2](https://img.shields.io/badge/aiogram-2-%234FC3F7)](https://docs.aiogram.dev/en/v2.25.1/)
 
 ## Отказ от ответственности:
 - Соблюдайте авторские права и убедитесь, что у вас есть право загружать и распространять контент.
