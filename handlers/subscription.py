@@ -1,4 +1,3 @@
-import logging
 from aiogram import types
 from dispatcher import dp, bot, channel_id
 
@@ -25,5 +24,4 @@ async def check_subscription(callback_query: types.CallbackQuery):
                 show_alert=True
             )
     except Exception as e:
-        logging.error(e)
         print(e)

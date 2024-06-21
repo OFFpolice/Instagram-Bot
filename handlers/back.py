@@ -13,7 +13,7 @@ async def process_back_callback(callback_query: types.CallbackQuery):
     await bot.edit_message_caption(
         chat_id=callback_query.message.chat.id,
         message_id=callback_query.message.message_id,
-        caption=f"<b>👋 Привет, {callback_query.from_user.first_name}!</b>\n\nС помощью этого бота вы сможете скачивать медиа из <b><i>«Instagram»</i></b>!\n\nСкопируйте ссылку на медиа из <b><i>«Instagram»</i></b> и пришлите мне!\n\n<b><i>Это может быть видео, фото! 📸📹</i></b>",
+        caption=f"<b>👋 Здравствуйте, {callback_query.from_user.first_name}!</b>\n\nС помощью этого бота вы сможете скачивать медиа из <b><i>«Instagram»</i></b>!\n\nСкопируйте ссылку на медиа из <b><i>«Instagram»</i></b> и пришлите мне!\n\n<b><i>Это может быть видео, фото! 📸📹</i></b>",
         parse_mode="HTML",
         reply_markup=keyboard
     )

@@ -1,9 +1,8 @@
 import re
-import logging
 import asyncio
 import instaloader
 from aiogram import types
-from dispatcher import dp, bot, L, channel_id, channel_link, photo_link, bot_name
+from dispatcher import dp, bot, L, channel_id, channel_link, photo_link
 
 
 @dp.message_handler(content_types=["text"])
@@ -64,7 +63,6 @@ async def download_media(message: types.Message):
                 f"{post_text}\n\n"
                 f"<b>🔗 Ссылка на <a href='{original_url}'>публикацию</a></b>\n"
                 f"<b>👤 Ссылка на <a href='{profile_url}'>профиль</a></b>\n\n"
-                f"<b><a href='{bot_name}'>🤖 Instagram Bot</a></b>"
             )
             if media_group:
                 if isinstance(media_group[0], types.InputMediaPhoto):
@@ -82,7 +80,6 @@ async def download_media(message: types.Message):
             
         except Exception as e:
             await bot.send_message(chat_id=message.chat.id, text=f"Произошла ошибка при загрузке: {e}")
-            logging.error(e)
             print(e)
             
             await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)

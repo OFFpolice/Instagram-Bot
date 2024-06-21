@@ -7,7 +7,6 @@ async def process_help_callback(callback_query: types.CallbackQuery):
     await bot.answer_callback_query(callback_query.id)
     keyboard = types.InlineKeyboardMarkup(row_width=1)
     keyboard.add(
-        types.InlineKeyboardButton("📦 GitHub", callback_data="github"),
         types.InlineKeyboardButton("🔙 Назад", callback_data="back")
     )
     await bot.edit_message_caption(
