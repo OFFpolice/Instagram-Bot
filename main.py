@@ -1,13 +1,12 @@
 import os
 import logging
-import asyncio
 import instaloader
 
 from dotenv import load_dotenv
 from os.path import join, dirname
 
-from dispatcher import bot, dp, L
-from aiogram import executor, types
+from dispatcher import dp, L
+from aiogram import executor
 
 from handlers.start import start_command
 from handlers.help import process_help_callback
@@ -27,9 +26,9 @@ instagram_password = os.environ.get("password")
 
 try:
     L.login(instagram_username, instagram_password)
-    logging.info(f"🟢 Успешно вошли в Инстаграм как: {instagram_username} %s")
+    logging.info(f"🟢 Успешно вошли в Инстаграм как: {instagram_username}")
 except instaloader.exceptions.ConnectionException as e:
-    logging.error(f"🔴 Не удалось войти в Инстаграм: {e} %s")
+    logging.error(f"🔴 Не удалось войти в Инстаграм: {e}")
 
 
 def register_handlers():
@@ -41,15 +40,6 @@ def register_handlers():
     dp.register_message_handler(download_media, content_types=["text"])
 
 
-async def set_commands():
-    commands = [
-        types.BotCommand(command="/start", description="Начать")
-    ]
-    await bot.set_my_commands(commands)
-
-
 if __name__ == "__main__":
     register_handlers()
-    loop = asyncio.get_event_loop()
-    loop.run_until_complete(set_commands())
     executor.start_polling(dp, skip_updates=True)
