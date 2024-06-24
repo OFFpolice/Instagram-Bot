@@ -9,7 +9,6 @@
 ## Как связаться со мной:
 - [![Telegram Badge](https://img.shields.io/badge/Telegram-blue?style=flat&logo=telegram&logoColor=white)](https://t.me/OFFpolice)
 - [![Twitter Badge](https://img.shields.io/twitter/follow/:OFFpolice2077)](https://x.com/OFFpolice2077)
-- [![Instagram Badge](https://img.shields.io/badge/Instagram-Follow%20Me-%23E4405F)](https://instagram.com/example_user)
 - [![Instagram Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/ВАШ_АККАУНТ)
 
 ## Лицензия:
