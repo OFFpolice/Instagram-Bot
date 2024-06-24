@@ -12,6 +12,7 @@
 - [![Twitter Badge](https://img.shields.io/twitter/follow/:OFFpolice2077)](https://x.com/OFFpolice2077)
 - [![Instagram Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/ВАШ_АККАУНТ)
 - [![Instagram Badge](https://img.shields.io/badge/-Instagram-E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/ВАШ_АККАУНТ)
+- [![Instagram Follow](https://img.shields.io/badge/Instagram-Follow-%23E4405F?style=flat&logo=instagram&logoColor=white)](https://instagram.com/ВАШ_АККАУНТ)
 
 ## Лицензия:
 Этот проект лицензируется по лицензии «MIT License» - более подробную информацию смотрите в файле [LICENSE](LICENSE).
