@@ -3,7 +3,7 @@
 [![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)](https://t.me/OFFpoliceChannel) [![aiogram 2](https://img.shields.io/badge/aiogram-2-%234FC3F7)](https://docs.aiogram.dev/en/v2.25.1/) [![instaloader](https://img.shields.io/badge/instaloader-4.11-%23007396)](https://pypi.org/project/instaloader/)
 
 
-**Инструкция по запуску бота**
+# Инструкция по запуску бота
 
 1. **Создайте Instagram аккаунт**:
    - Зарегистрируйте новый профиль в Instagram.
