@@ -17,7 +17,6 @@ channel_link = os.environ.get("channel_link")
 channel_id = os.environ.get("channel_id")
 photo_link = os.environ.get("photo_link")
 video_link = os.environ.get("video_link")
-bot_name = os.environ.get("bot_name")
 bot_token = os.environ.get("bot_token")
 
 
