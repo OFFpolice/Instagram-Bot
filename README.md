@@ -33,6 +33,7 @@
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Subscription_Yes.jpg" alt="Subscription Yes" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_P.jpg" alt="Downloads" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Downloads Photo" width="150"/>
+   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Downloads Photo" width="150"/>
 </p>
 
 ## Отказ от ответственности:
