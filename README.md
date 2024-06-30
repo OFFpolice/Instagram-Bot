@@ -24,7 +24,16 @@
 4. **Запуск**:
    - Запустите файл `main.py`.
 
-## Screenshots:
+## Скриншоты:
+<p align="center">
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/start.jpg" alt="Start" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/help.jpg" alt="Help" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/subscription.jpg" alt="Subscription" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/subscription_no.jpg" alt="Subscription No" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/subscription_yes.jpg" alt="Subscription Yes" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/downloads.jpg" alt="Downloads" width="150"/>
+  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/downloads_video.jpg" alt="Downloads Video" width="150"/>
+</p>
 
 ## Отказ от ответственности:
 - Соблюдайте авторские права и убедитесь, что у вас есть право загружать и распространять контент.
