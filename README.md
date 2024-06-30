@@ -32,11 +32,11 @@
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Subscription_No.jpg" alt="Subscription No" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Subscription_Yes.jpg" alt="Subscription Yes" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_P.jpg" alt="Processing P" width="150"/>
-  <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Processing Photo" width="150"/>
-   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_Reel.jpg" alt="Processing Reel" width="150"/>
-   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Video.jpg" alt="Processing Video" width="150"/>
+  <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Photo" width="150"/>
+   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_Reel.jpg" alt="Reel" width="150"/>
+   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Video.jpg" alt="Video" width="150"/>
    <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_Profile_Info.jpg" alt="Processing Profile Info" width="150"/>
-   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_Profile_Info.jpg" alt="Processing Profile Info" width="150"/>
+   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Profile.jpg" alt="Profile" width="150"/>
 </p>
 
 ## Отказ от ответственности:
