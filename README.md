@@ -35,6 +35,7 @@
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Processing Photo" width="150"/>
    <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_Reel.jpg" alt="Processing Reel" width="150"/>
    <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Video.jpg" alt="Processing Video" width="150"/>
+   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Video.jpg" alt="Processing Video" width="150"/>
 </p>
 
 ## Отказ от ответственности:
