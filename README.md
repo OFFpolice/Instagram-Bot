@@ -32,7 +32,7 @@
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Subscription_No.jpg" alt="Subscription No" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Subscription_Yes.jpg" alt="Subscription Yes" width="150"/>
   <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Processing_P.jpg" alt="Downloads" width="150"/>
-  <img src="https://github.com/OFFpolice/TikTok-Bot/blob/main/photo/downloads_video.jpg" alt="Downloads Video" width="150"/>
+  <img src="https://github.com/OFFpolice/Instagram-Bot/blob/main/Screenshots/Photo.jpg" alt="Downloads Photo" width="150"/>
 </p>
 
 ## Отказ от ответственности:
