@@ -1,3 +1,4 @@
+import asyncio
 import instaloader
 from aiogram import types
 from dispatcher import dp, bot, L, channel_id, channel_link, photo_link
@@ -38,7 +39,7 @@ async def download_media(message: types.Message):
     
     try:
         shortcode = message.text.split("/")[-2]
-        post = instaloader.Post.from_shortcode(L.context, shortcode)
+        post = await asyncio.to_thread(instaloader.Post.from_shortcode, L.context, shortcode)
 
         media_group = []
 
@@ -79,15 +80,12 @@ async def download_media(message: types.Message):
                 chunk[0].parse_mode = "HTML"
 
             await bot.send_media_group(chat_id=message.chat.id, media=chunk)
-
-        await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
-        await bot.delete_message(chat_id=message.chat.id, message_id=message_sticker.message_id)
-        await bot.delete_message(chat_id=message.chat.id, message_id=processing_message.message_id)
         
     except Exception as e:
         await bot.send_message(chat_id=message.chat.id, text=f"<b>Произошла ошибка при загрузке:</b> <code>{e}</code>", parse_mode="HTML")
         print(e)
-
+        
+    finally:
         await bot.delete_message(chat_id=message.chat.id, message_id=message.message_id)
         await bot.delete_message(chat_id=message.chat.id, message_id=message_sticker.message_id)
         await bot.delete_message(chat_id=message.chat.id, message_id=processing_message.message_id)

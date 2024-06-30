@@ -8,7 +8,7 @@ async def help_callback(callback_query: types.CallbackQuery):
     keyboard = types.InlineKeyboardMarkup(row_width=2)
     keyboard.add(
         types.InlineKeyboardButton("🌀 Shazam Bot", url="https://t.me/OFFpoliceShazamBot"),
-        types.InlineKeyboardButton("🔁 Поделиться", url="https://t.me/share/url?url=https://t.me/Save_InstagramBot&text=👋%20Привет,%20я%20нашел%20классного%20бота%20с%20помощью%20которого%20можно%20сохранять%20видео%20и%20фотографии%20из%20Instagram%20прямо%20в%20Telegram"),
+        types.InlineKeyboardButton("🔁 Поделиться", url="https://t.me/share/url?url=https://t.me/Save_InstagramBot&text=👋%20Привет,%20сохраняй%20видео%20и%20фотографии%20из%20Instagram%20прямо%20в%20Telegram%20😏😏😏"),
         types.InlineKeyboardButton("🔙 Назад", callback_data="back")
     )
     await bot.edit_message_caption(
