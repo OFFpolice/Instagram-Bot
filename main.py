@@ -10,6 +10,7 @@ from dispatcher import dp, bot, L
 from aiogram import executor, types
 
 from handlers.start import start_command
+from handlers.privacy import privacy_command
 from handlers.help import help_callback
 from handlers.back import back_callback
 from handlers.subscription import check_subscription
@@ -34,8 +35,9 @@ except instaloader.exceptions.ConnectionException as e:
 
 async def register_handlers():
     dp.register_message_handler(start_command, commands=["start"])
-    dp.register_callback_query_handler(help_callback, lambda c: c.data == "help")
-    dp.register_callback_query_handler(back_callback, lambda c: c.data == "back")
+    dp.register_message_handler(privacy_command, commands=["privacy"])
+    dp.register_callback_query_handler(help_callback, lambda query: query.data == "help")
+    dp.register_callback_query_handler(back_callback, lambda query: query.data == "back")
     dp.register_callback_query_handler(check_subscription, lambda query: query.data == "check_subscription")
     dp.register_message_handler(download_media, regexp=r"https://www\.instagram\.com/(p|reel)/")
     dp.register_message_handler(download_profile, regexp=r"https?://(www\.)?instagram\.com/([^/?]+)")
@@ -43,7 +45,8 @@ async def register_handlers():
 
 async def set_commands():
     commands = [
-        types.BotCommand(command="/start", description="🤖 Start")
+        types.BotCommand(command="/start", description="🤖 Старт"),
+        types.BotCommand(command="/privacy", description="👤 Политика конфиденциальности")
     ]
     await bot.set_my_commands(commands)
 
