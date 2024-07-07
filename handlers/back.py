@@ -2,7 +2,7 @@ from aiogram import types
 from dispatcher import dp, bot
 
 
-@dp.callback_query_handler(lambda c: c.data == "back")
+@dp.callback_query_handler(lambda query: query.data == "back")
 async def back_callback(callback_query: types.CallbackQuery):
     await bot.answer_callback_query(callback_query.id)
     keyboard = types.InlineKeyboardMarkup(row_width=2)
@@ -14,7 +14,7 @@ async def back_callback(callback_query: types.CallbackQuery):
     await bot.edit_message_caption(
         chat_id=callback_query.message.chat.id,
         message_id=callback_query.message.message_id,
-        caption=f"<b>👋 Здравствуйте, {callback_query.from_user.first_name}!</b>\n\nС помощью этого бота вы сможете скачивать медиа из <b>«Instagram»</b>!\n\nСкопируйте ссылку на медиа из <b>«Instagram»</b> и пришлите мне!\n\n<b>Это может быть видео, фото! 📸📹</b>",
+        caption=f"<b>👋 Здравствуйте, {callback_query.from_user.first_name}!</b>\n\nС помощью этого бота вы сможете сохранять медиа из <b>Instagram</b>!\nСкопируйте ссылку на медиа из <b>Instagram</b> и пришлите мне!\n\n<b>📸 📹 Это может быть видео, фото!</b>\n\n/privacy – Политика конфиденциальности.",
         parse_mode="HTML",
         reply_markup=keyboard
     )
