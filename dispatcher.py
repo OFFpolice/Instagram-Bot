@@ -1,5 +1,6 @@
 import os
 import logging
+import aiohttp
 import instaloader
 
 from dotenv import load_dotenv
@@ -25,3 +26,14 @@ dp = Dispatcher(bot)
 dp.middleware.setup(LoggingMiddleware())
 logging.basicConfig(level=logging.INFO)
 L = instaloader.Instaloader()
+
+
+async def bot_username():
+    url = f"https://api.telegram.org/bot{bot_token}/getMe"
+    async with aiohttp.ClientSession() as session:
+        async with session.get(url) as response:
+            result = await response.json()
+            if result["ok"]:
+                bot_info = result["result"]
+                return bot_info["username"]
+    return None
