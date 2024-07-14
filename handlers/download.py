@@ -1,7 +1,7 @@
 import asyncio
 import instaloader
 from aiogram import types
-from dispatcher import dp, bot, L, channel_id, channel_link, photo_link
+from dispatcher import dp, bot, L, channel_id, channel_link, photo_link, bot_username
 
 
 @dp.message_handler(regexp=r"https://www\.instagram\.com/(p|reel)/")
@@ -35,11 +35,12 @@ async def download_media(message: types.Message):
         return
     
     message_sticker = await bot.send_sticker(chat_id=message.chat.id, sticker="CAACAgIAAxkBAAEL4ahmFZL-mpr6JHYpjetNsXYZZt3raAACIwADKA9qFCdRJeeMIKQGNAQ")
-    processing_message = await bot.send_message(chat_id=message.chat.id, text="<b>Пожалуйста, подождите!</b>\n<b><i>Загрузка началась...</i></b>", parse_mode="HTML")
+    processing_message = await bot.send_message(chat_id=message.chat.id, text="<b>Пожалуйста, подождите!</b>\n<b><i>Загрузка медиа началась...⏳⌛️⏳⌛️</i></b>", parse_mode="HTML")
     
     try:
         shortcode = message.text.split("/")[-2]
         post = await asyncio.to_thread(instaloader.Post.from_shortcode, L.context, shortcode)
+        username = await bot_username()
 
         media_group = []
 
@@ -66,6 +67,7 @@ async def download_media(message: types.Message):
             f"{post_text}\n\n"
             f"<b>🔗 Ссылка на <a href='{original_url}'>публикацию</a></b>\n"
             f"<b>👤 Ссылка на <a href='{profile_url}'>профиль</a></b>\n\n"
+            f"<b>🤖: <a href='https://t.me/{username}'>@SaveInstagramBot</a></b>"
         )
         
         chunk_size = 10
